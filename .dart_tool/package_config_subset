@@ -38,6 +38,10 @@ cupertino_icons
 2.12
 file:///home/tolik/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/cupertino_icons-1.0.4/
 file:///home/tolik/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/cupertino_icons-1.0.4/lib/
+equatable
+2.12
+file:///home/tolik/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/equatable-2.0.3/
+file:///home/tolik/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/equatable-2.0.3/lib/
 fake_async
 2.12
 file:///home/tolik/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/fake_async-1.2.0/
@@ -50,6 +54,10 @@ file
 2.12
 file:///home/tolik/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/file-6.1.2/
 file:///home/tolik/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/file-6.1.2/lib/
+fl_chart
+2.12
+file:///home/tolik/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/fl_chart-0.50.1/
+file:///home/tolik/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/fl_chart-0.50.1/lib/
 flutter_bloc
 2.12
 file:///home/tolik/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_bloc-8.0.1/
@@ -66,6 +74,10 @@ google_fonts
 2.12
 file:///home/tolik/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/google_fonts-2.3.2/
 file:///home/tolik/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/google_fonts-2.3.2/lib/
+graphic
+2.13
+file:///home/tolik/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/graphic-0.10.3/
+file:///home/tolik/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/graphic-0.10.3/lib/
 http
 2.14
 file:///home/tolik/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/http-0.13.4/
