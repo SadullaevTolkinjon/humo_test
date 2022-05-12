@@ -35,13 +35,13 @@ class MainTheme {
 
     // ? Scaffold background Color
 
-    scaffoldBackgroundColor: _whiteColor,
+    scaffoldBackgroundColor: Colors.blue.shade100,
 
     // ? Floating action Buttons styles
 
     bottomNavigationBarTheme: const BottomNavigationBarThemeData(
       selectedItemColor: Color(0XFF7BA3F2),
-      unselectedItemColor: Colors.white,
+      unselectedItemColor: Color(0XFF7BA3F2),
       showSelectedLabels: true,
       showUnselectedLabels: true,
     ),

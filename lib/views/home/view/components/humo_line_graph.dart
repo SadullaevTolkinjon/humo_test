@@ -10,68 +10,62 @@ class Humo_line_graph extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SliverPadding(
-      padding: EdgeInsets.only(
-        top: getHeight(30),
-      ),
-      sliver: SliverToBoxAdapter(
-        child: SizedBox(
-          height: getHeight(300),
-          child: PageView.builder(
-            itemBuilder: (context, index) {
-              return SizedBox(
-                height: getHeight(300),
-                child: Column(
+    return Container(
+      color: Colors.blue[100]!.withOpacity(0.88),
+      height: getHeight(300),
+      child: PageView.builder(
+        itemBuilder: (context, index) {
+          return SizedBox(
+            height: getHeight(300),
+            child: Column(
+              children: [
+                SizedBox(
+                  height: getHeight(25),
+                  width: getWidth(100),
+                  child: Image.asset(
+                    "assets/images/humo.png",
+                    fit: BoxFit.fitWidth,
+                  ),
+                ),
+                SizedBox(
+                  height: getHeight(15),
+                ),
+                Container(
+                  height: getHeight(19),
+                  width: getWidth(200),
+                  child: Text(
+                    "20 333 932.15 sum",
+                    style: TextStyle(
+                        color: ColorConstants.whiteColor,
+                        fontSize: getHeight(15),
+                        fontWeight: FontWeight.w800),
+                  ),
+                  alignment: Alignment.center,
+                ),
+                SizedBox(
+                  height: getHeight(8),
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
-                    SizedBox(
-                      height: getHeight(25),
-                      width: getWidth(100),
-                      child: Image.asset(
-                        "assets/images/humo.png",
-                        fit: BoxFit.fitWidth,
-                      ),
-                    ),
-                    SizedBox(
-                      height: getHeight(15),
-                    ),
                     Container(
-                      height: getHeight(19),
-                      width: getWidth(200),
-                      child: Text(
-                        "20 333 932.15 sum",
-                        style: TextStyle(
-                            color: ColorConstants.whiteColor,
-                            fontSize: getHeight(15),
-                            fontWeight: FontWeight.w800),
-                      ),
-                      alignment: Alignment.center,
-                    ),
-                    SizedBox(
-                      height: getHeight(8),
-                    ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: [
-                        Container(
-                            child: Text(
-                          "9860 31*** **** 0000",
-                          style: TextStyle(color: ColorConstants.whiteColor),
-                        )),
-                        Text(
-                          "09/20",
-                          style: TextStyle(color: ColorConstants.whiteColor),
-                        )
-                      ],
-                    ),
-                    Expanded(
-                      child: mainData(),
-                    ),
+                        child: Text(
+                      "9860 31*** **** 0000",
+                      style: TextStyle(color: ColorConstants.whiteColor),
+                    )),
+                    Text(
+                      "09/20",
+                      style: TextStyle(color: ColorConstants.whiteColor),
+                    )
                   ],
                 ),
-              );
-            },
-          ),
-        ),
+                Expanded(
+                  child: mainData(),
+                ),
+              ],
+            ),
+          );
+        },
       ),
     );
   }
@@ -90,7 +84,6 @@ LineChart mainData() {
     );
     Widget text;
     switch (value.toInt()) {
-     
       case 1:
         text = const Text('Jan', style: style);
         break;
@@ -106,10 +99,10 @@ LineChart mainData() {
       case 9:
         text = const Text('Sep', style: style);
         break;
-         case 11:
+      case 11:
         text = const Text('Dec', style: style);
         break;
-        
+
       default:
         text = const Text('', style: style);
         break;
@@ -216,9 +209,8 @@ LineChart mainData() {
         belowBarData: BarAreaData(
           show: false,
           gradient: LinearGradient(
-            colors: gradientColors
-                .map((color) => color.withOpacity(0.3))
-                .toList(),
+            colors:
+                gradientColors.map((color) => color.withOpacity(0.3)).toList(),
             begin: Alignment.centerLeft,
             end: Alignment.centerRight,
           ),
